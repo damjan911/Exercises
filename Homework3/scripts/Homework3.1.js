@@ -1,25 +1,17 @@
-
-function myFunction(type){
-
-    console.log(typeof type);
+function typeCheckingOfVariables(type) {
+  console.log(typeof type);
 }
 
-// Promenlivata a mi e objekt,b mi e od tip boolean, c mi e od tip broj, d mi e od tip String, Variable mi e Undefined.
+// Promenlivata so ime objekt se odnesuva za tipot na taa promenliva,istoto e i za ostanatite.
 
- const a={firstname:"Damjan"};
+const objekt = { firstname: "Damjan" };
 
- const b=true;
+const boolean = true;
 
- const c=23;
+const number = 23;
 
- const d="Hello World !";
+const string = "Hello World !";
 
- let variable;
+let variable;
 
-   
-
-myFunction(b);
-
-
-
-
+typeCheckingOfVariables(number);

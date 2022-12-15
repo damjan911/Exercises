@@ -1,29 +1,24 @@
-let money=prompt("Enter a money that you want to take it !");
+let ATM = prompt("Get Cash from a Credit Card at an ATM");
+ATM = parseInt(ATM);
 
-const bankAccount=300;
+function getCashFromAtm(money) {
+  let bankAccount = 300;
 
-money=parseInt(money);
+  if (isNaN(money)) {
+    return "The transaction cannot be completed !";
+  }
 
-function ATM(takeCash){
+  if (money >= bankAccount) {
+    return "The transaction cannot be completed !";
+  }
 
-    if(typeof money !== "number"){
+  if (money < bankAccount) {
+    return "You have enough money in your Bank Account !";
+  }
 
-        return "Invalid Input!";
-    }
-
-    if (money < bankAccount){
-
-        console.log("You have anough money in Bank Account !");
-    }
-
-     if(money >= bankAccount){
-
-        console.log("Not enough money !");
-
-     }
-
-     return (money);
+  return money;
 }
 
+const getMoneyFromAtm = getCashFromAtm(ATM);
 
-ATM(money);
+console.log(getMoneyFromAtm);

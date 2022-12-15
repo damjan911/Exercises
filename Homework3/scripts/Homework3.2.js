@@ -1,24 +1,31 @@
-let humanYear=prompt("Enter a human year");
-let dogYear;
+let humanYear = prompt("Enter a human year");
+humanYear = parseInt(humanYear);
 
-humanYear=parseInt(humanYear);
+function humanToDogYear(year1) {
+  if (isNaN(year1)) {
+    return "Invalid Input !";
+  }
 
-function humanToDogYear (year1){
-
-    if(humanYear !== "number"){
-
-        return "Invalid Input!";
-    }
-
-    return (dogYear);
+  return year1 * 7;
 }
 
-    console.log(humanYear*7);
+const dogYear = humanToDogYear(humanYear);
 
-  humanToDogYear(humanYear);
+console.log(`The Dog has ${dogYear} years`);
 
+// Bonus
 
+/* let dogYear = prompt("Enter a dog year");
+dogYear = parseInt(dogYear);
 
+function dogToHumanYear(year2) {
+  if (isNaN(year2)) {
+    return "Invalid Input !";
+  }
 
+  return year2 / 7;
+}
 
+const humanYear = dogToHumanYear(dogYear);
 
+console.log(`The human has ${humanYear} years`); */
