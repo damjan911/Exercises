@@ -28,4 +28,5 @@ function dogToHumanYear(year2) {
 
 const humanYear = dogToHumanYear(dogYear);
 
-console.log(`The human has ${humanYear} years`); */
+console.log(`The human has ${humanYear} years`);
+ */
